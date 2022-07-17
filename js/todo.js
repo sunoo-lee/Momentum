@@ -24,7 +24,7 @@ function paintToDo(newTodo) {
   span.innerText = newTodo.text;
   const button = document.createElement("button");
   const del_btn = document.createElement("img");
-  del_btn.src = "../img/delete.png";
+  del_btn.src = "./img/delete.png";
   button.innerText = "　";
   button.appendChild(del_btn);
   button.addEventListener("click", deleteTodo);
