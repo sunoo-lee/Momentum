@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum</title>
+  </head>
+  <body>
+    <div class="container map">
+      <img src="./img/map.jpg" alt="map" />
+    </div>
+    <div class="container suspect">
+      <div class="suspect_label">Suspects</div>
+      <img src="./img/suspect.jpg" alt="suspect" />
+    </div>
+
+    <div class="container player">
+      <div class="player_label">BGM</div>
+      <div id="player"></div>
+      <div class="play_time">00:00 / 35:42</div>
+      <div class="control">
+        <button class="play"><img src="./img/play.png" /></button>
+        <button class="pause"><img src="./img/pause.png" /></button>
+        <button class="stop"><img src="./img/back.png" /></button>
+      </div>
+    </div>
+    <div class="container clock">
+      <h2 id="clock">00:00:00</h2>
+    </div>
+
+    <div class="container date">
+      <h2 id="date">00/00</h2>
+    </div>
+
+    <div class="container greetings">
+      <form class="hidden" id="login_form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+        <input type="submit" value="Write" />
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
+    </div>
+
+    <div class="container todo">
+      <div class="label todo_label">To Do</div>
+      <form action="" id="todo_form">
+        <input
+          class="todo_input"
+          type="text"
+          placeholder="Write a To Do and Press Enter"
+        />
+      </form>
+      <ul id="todo_list"></ul>
+    </div>
+
+    <div class="container quotes">
+      <div class="label quote_label">Quote</div>
+      <div class="quote_label_after"></div>
+      <div id="quote">
+        <span class="quote"></span>
+        <span class="author"></span>
+      </div>
+    </div>
+
+    <div class="container weather">
+      <div class="label weather_label">Weather</div>
+      <div id="weather">
+        <li>
+          <span></span>
+        </li>
+        <li>
+          <span></span>
+        </li>
+      </div>
+    </div>
+
+    <script src="js/background.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/player.js"></script>
+  </body>
+</html>
